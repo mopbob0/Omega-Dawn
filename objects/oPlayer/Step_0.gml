@@ -1,4 +1,4 @@
-//get inputs (litterally dont need these anymore but they are here anyway)
+oTEST//get inputs (litterally dont need these anymore but they are here anyway)
 rightKey = global.rightKey;
 leftKey = global.leftKey;
 upKey = global.upKey;
