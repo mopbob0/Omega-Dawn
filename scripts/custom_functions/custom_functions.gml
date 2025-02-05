@@ -7,11 +7,11 @@ function draw_my_weapon()
 	var _yOffset = lengthdir_y(weaponOffsetDist, aimDir);
 	
 	//flip weapon upright
-	var _weaponYscl = 2;
+	var _weaponYscl = 1;
 	if aimDir >90 && aimDir < 270
 	{
-		_weaponYscl = -2;
+		_weaponYscl = -1;
 	}
 
-	draw_sprite_ext(sGun,0, x + _xOffset, centerY + _yOffset, 2, _weaponYscl, aimDir, c_white, 1);
+	draw_sprite_ext(sGun,0, x + _xOffset, centerY + _yOffset, 1, _weaponYscl, aimDir, c_white, 1);
 }
