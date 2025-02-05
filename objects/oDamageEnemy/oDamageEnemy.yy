@@ -1,20 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"oBullet",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"oDamageEnemy",
+  "eventList":[],
   "managed":true,
-  "name":"oBullet",
+  "name":"oDamageEnemy",
   "overriddenProperties":[],
   "parent":{
     "name":"Ωmega Dawn",
     "path":"Ωmega Dawn.yyp",
   },
   "parentObjectId":{
-    "name":"oDamageEnemy",
-    "path":"objects/oDamageEnemy/oDamageEnemy.yy",
+    "name":"oDamageParent",
+    "path":"objects/oDamageParent/oDamageParent.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -33,10 +30,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"sBullet",
-    "path":"sprites/sBullet/sBullet.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

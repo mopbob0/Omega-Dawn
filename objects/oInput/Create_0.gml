@@ -14,4 +14,4 @@ global.shootKey = 0;
 
 
 //conteoller option
-global.controllerMode = 1;
+global.controllerMode = 0;

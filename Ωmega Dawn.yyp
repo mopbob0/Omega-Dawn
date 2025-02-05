@@ -10,6 +10,7 @@
   },
   "defaultScriptType":0,
   "Folders":[
+    {"$GMFolder":"","%Name":"Enemies","folderPath":"folders/Enemies.yy","name":"Enemies","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Player","folderPath":"folders/Player.yy","name":"Player","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
   "IncludedFiles":[],
@@ -21,6 +22,10 @@
   "name":"Ωmega Dawn",
   "resources":[
     {"id":{"name":"oBullet","path":"objects/oBullet/oBullet.yy",},},
+    {"id":{"name":"oCombatDroid","path":"objects/oCombatDroid/oCombatDroid.yy",},},
+    {"id":{"name":"oDamageEnemy","path":"objects/oDamageEnemy/oDamageEnemy.yy",},},
+    {"id":{"name":"oDamageParent","path":"objects/oDamageParent/oDamageParent.yy",},},
+    {"id":{"name":"oEnemyParent","path":"objects/oEnemyParent/oEnemyParent.yy",},},
     {"id":{"name":"oInput","path":"objects/oInput/oInput.yy",},},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},},
     {"id":{"name":"oSolidWall","path":"objects/oSolidWall/oSolidWall.yy",},},
@@ -28,6 +33,8 @@
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"custom_functions","path":"scripts/custom_functions/custom_functions.yy",},},
     {"id":{"name":"sBullet","path":"sprites/sBullet/sBullet.yy",},},
+    {"id":{"name":"sCombatDroid","path":"sprites/sCombatDroid/sCombatDroid.yy",},},
+    {"id":{"name":"sEnemy","path":"sprites/sEnemy/sEnemy.yy",},},
     {"id":{"name":"sGun","path":"sprites/sGun/sGun.yy",},},
     {"id":{"name":"sPlayerDown","path":"sprites/sPlayerDown/sPlayerDown.yy",},},
     {"id":{"name":"sPlayerLeft","path":"sprites/sPlayerLeft/sPlayerLeft.yy",},},

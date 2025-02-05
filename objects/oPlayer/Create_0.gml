@@ -9,7 +9,7 @@ yspd = 0;
 	centerYOffset = -6;
 	centerY = y + centerYOffset;
 
-	weaponOffsetDist = 2;
+	weaponOffsetDist = 4;
 	aimDir = 0;
 
 	face = 0;
@@ -25,4 +25,4 @@ yspd = 0;
 	shootCooldown = 9;
 
 	bulletObj = oBullet;
-	weaponLength = sprite_get_bbox_right(sGun); //  - sprite_get_xoffset(sGun)
+	weaponLength = sprite_get_bbox_right(sGun)*2; //  - sprite_get_xoffset(sGun)
