@@ -19,6 +19,25 @@
 	//move
 	x += xspd;
 	y += yspd;
+	
+	
+	
+	
+	//face
+	face = round(dir/90);
+	if face = 4 {face = 0;}
+	
+	//animate
+	if xspd == 0 && yspd == 0
+	{
+		image_index = 0;
+	}
+
+	//set player sprite
+	mask_index = sprite[3];
+	sprite_index = sprite[face];
+	
+	
 
 //inherit parent event
 	//getting damaged and dying
