@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sCombatDroid",
-    "path":"sprites/sCombatDroid/sCombatDroid.yy",
+    "name":"sCombatDown",
+    "path":"sprites/sCombatDown/sCombatDown.yy",
   },
   "spriteMaskId":null,
   "visible":true,
