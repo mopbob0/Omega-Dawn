@@ -1,17 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"oDamageParent",
+  "%Name":"oDamagePlayerTest",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oDamageParent",
+  "name":"oDamagePlayerTest",
   "overriddenProperties":[],
   "parent":{
-    "name":"Damage",
-    "path":"folders/Damage.yy",
+    "name":"Ωmega Dawn",
+    "path":"Ωmega Dawn.yyp",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"oDamagePlayer",
+    "path":"objects/oDamagePlayer/oDamagePlayer.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -29,7 +32,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"sDamagePlayerTest",
+    "path":"sprites/sDamagePlayerTest/sDamagePlayerTest.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

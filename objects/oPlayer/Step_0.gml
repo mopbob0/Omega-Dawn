@@ -31,6 +31,9 @@ shootKey = global.shootKey;
 	y += yspd;
 #endregion
 
+//get damaged
+get_damaged(oDamagePlayer);
+
 //sprite control	
 #region
 	//player aiming

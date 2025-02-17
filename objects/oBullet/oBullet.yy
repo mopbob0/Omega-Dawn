@@ -9,8 +9,8 @@
   "name":"oBullet",
   "overriddenProperties":[],
   "parent":{
-    "name":"Ωmega Dawn",
-    "path":"Ωmega Dawn.yyp",
+    "name":"Weapons",
+    "path":"folders/Weapons.yy",
   },
   "parentObjectId":{
     "name":"oDamageEnemy",

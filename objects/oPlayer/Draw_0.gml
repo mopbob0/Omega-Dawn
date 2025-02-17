@@ -12,3 +12,8 @@ draw_self();
 	{
 		draw_my_weapon();
 	}
+	
+	
+	
+//draw hp
+draw_text(x,y, string(hp));

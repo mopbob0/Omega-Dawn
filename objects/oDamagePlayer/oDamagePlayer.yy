@@ -1,17 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"oDamageParent",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"oDamagePlayer",
+  "eventList":[],
   "managed":true,
-  "name":"oDamageParent",
+  "name":"oDamagePlayer",
   "overriddenProperties":[],
   "parent":{
     "name":"Damage",
     "path":"folders/Damage.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"oDamageParent",
+    "path":"objects/oDamageParent/oDamageParent.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -29,7 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"sPlayerDown",
+    "path":"sprites/sPlayerDown/sPlayerDown.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

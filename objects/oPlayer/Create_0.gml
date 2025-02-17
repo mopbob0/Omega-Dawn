@@ -1,3 +1,6 @@
+//damage setup
+	get_damaged_create(20);
+
 //variables for movement
 moveDir = 0;
 moveSpd = 2;
@@ -20,7 +23,7 @@ yspd = 0;
 
 	sprite_index = sprite[face];
 	
-//weapon info\
+//weapon info
 	shootTimer = 0;
 	shootCooldown = 9;
 

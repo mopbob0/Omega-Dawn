@@ -9,8 +9,8 @@
   "name":"oInput",
   "overriddenProperties":[],
   "parent":{
-    "name":"Ωmega Dawn",
-    "path":"Ωmega Dawn.yyp",
+    "name":"Game Settings",
+    "path":"folders/Game Settings.yy",
   },
   "parentObjectId":null,
   "persistent":true,

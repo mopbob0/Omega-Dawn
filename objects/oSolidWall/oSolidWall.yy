@@ -6,8 +6,8 @@
   "name":"oSolidWall",
   "overriddenProperties":[],
   "parent":{
-    "name":"Ωmega Dawn",
-    "path":"Ωmega Dawn.yyp",
+    "name":"Walls",
+    "path":"folders/Walls.yy",
   },
   "parentObjectId":{
     "name":"oWall",

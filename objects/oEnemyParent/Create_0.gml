@@ -1,4 +1,2 @@
-hp = 10;
-
-//create damage list
-damageList = ds_list_create();
+event_inherited();
+get_damaged_create();

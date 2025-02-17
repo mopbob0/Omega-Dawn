@@ -6,8 +6,8 @@
   "name":"oDamageEnemy",
   "overriddenProperties":[],
   "parent":{
-    "name":"Ωmega Dawn",
-    "path":"Ωmega Dawn.yyp",
+    "name":"Damage",
+    "path":"folders/Damage.yy",
   },
   "parentObjectId":{
     "name":"oDamageParent",
@@ -30,7 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"sCombatDown",
+    "path":"sprites/sCombatDown/sCombatDown.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
