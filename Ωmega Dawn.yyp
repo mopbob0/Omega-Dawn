@@ -25,6 +25,7 @@
   },
   "name":"Ωmega Dawn",
   "resources":[
+    {"id":{"name":"oBreakableBox","path":"objects/oBreakableBox/oBreakableBox.yy",},},
     {"id":{"name":"oBullet","path":"objects/oBullet/oBullet.yy",},},
     {"id":{"name":"oCombatDroid","path":"objects/oCombatDroid/oCombatDroid.yy",},},
     {"id":{"name":"oDamageEnemy","path":"objects/oDamageEnemy/oDamageEnemy.yy",},},
@@ -39,6 +40,7 @@
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"custom_functions","path":"scripts/custom_functions/custom_functions.yy",},},
     {"id":{"name":"sBensLilGuy","path":"sprites/sBensLilGuy/sBensLilGuy.yy",},},
+    {"id":{"name":"sBreakableBox","path":"sprites/sBreakableBox/sBreakableBox.yy",},},
     {"id":{"name":"sBullet","path":"sprites/sBullet/sBullet.yy",},},
     {"id":{"name":"sCombatDown","path":"sprites/sCombatDown/sCombatDown.yy",},},
     {"id":{"name":"sCombatLeft","path":"sprites/sCombatLeft/sCombatLeft.yy",},},

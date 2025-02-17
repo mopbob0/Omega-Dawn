@@ -32,7 +32,7 @@ shootKey = global.shootKey;
 #endregion
 
 //get damaged
-get_damaged(oDamagePlayer);
+get_damaged(oDamagePlayer, true);
 
 //sprite control	
 #region
@@ -86,3 +86,5 @@ if shootKey && shootTimer <=0
 		dir = other.aimDir;
 	}
 }
+
+depth = -bbox_bottom;

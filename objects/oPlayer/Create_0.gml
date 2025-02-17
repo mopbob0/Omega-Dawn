@@ -1,5 +1,5 @@
 //damage setup
-	get_damaged_create(20);
+	get_damaged_create(20, true);
 
 //variables for movement
 moveDir = 0;
