@@ -1,11 +1,11 @@
 {
   "$GMSprite":"",
   "%Name":"sCombatDown",
-  "bboxMode":0,
+  "bboxMode":2,
   "bbox_bottom":15,
   "bbox_left":3,
   "bbox_right":12,
-  "bbox_top":3,
+  "bbox_top":10,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,

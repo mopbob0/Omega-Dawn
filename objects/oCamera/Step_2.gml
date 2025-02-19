@@ -9,5 +9,10 @@ if instance_exists(oPlayer)
 	y = oPlayer.centerY - _camH/2;
 }
 
+//clamp camera to room borders
+x = clamp(x,0,room_width - _camW);
+y = clamp(y,0,room_height - _camH);
+
+
 //set camera position
 camera_set_view_pos(view_camera[0], x, y);
