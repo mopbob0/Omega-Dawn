@@ -25,7 +25,7 @@ yspd = 0;
 	
 //weapon info
 	shootTimer = 0;
-	shootCooldown = 9;
+	shootCooldown = 9; //9 default
 
 	bulletObj = oBullet;
 	weaponLength = sprite_get_bbox_right(sGun); //  - sprite_get_xoffset(sGun)

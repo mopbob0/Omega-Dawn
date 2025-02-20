@@ -28,7 +28,7 @@
 		if _iframes == true
 		{
 			iframeTimer = 0;
-			iframeNumber = 90;
+			iframeNumber = 30;
 		}
 
 		//create damage list

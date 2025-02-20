@@ -20,6 +20,6 @@ state = 1;
 	//shooting state
 	cooldownTime = 4*60;
 	shootTimer = 0;
-	windupTime = 60;
+	windupTime = 20;
 	recoverTime = 45;
 	bulletInst = noone;
