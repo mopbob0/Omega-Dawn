@@ -54,8 +54,8 @@ get_damaged(oDamagePlayer, true);
 		}
 
 	//face player
-	face = round(aimDir/90);
-	if face = 4 {face = 0;}
+	face = round(aimDir/45);
+	if face = 8 {face = 0;}
 	
 	//animate
 	if xspd == 0 && yspd == 0
@@ -64,7 +64,7 @@ get_damaged(oDamagePlayer, true);
 	}
 
 	//set player sprite
-	mask_index = sprite[3];
+	mask_index = sprite[6];
 	sprite_index = sprite[face];
 #endregion
 

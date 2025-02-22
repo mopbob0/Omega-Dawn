@@ -9,17 +9,21 @@ yspd = 0;
 
 
 //sprite control
-	centerYOffset = -6;
+	centerYOffset = -44;
 	centerY = y + centerYOffset;
 
 	weaponOffsetDist = 2;
 	aimDir = 0;
 
 	face = 0;
-	sprite[0] = sPlayerRight;
-	sprite[1] = sPlayerUp;
-	sprite[2] = sPlayerLeft;
-	sprite[3] = sPlayerDown;
+	sprite[0] = sWalkE;
+	sprite[1] = sWalkNE
+	sprite[2] = sWalkN;
+	sprite[3] = sWalkNW
+	sprite[4] = sWalkW;
+	sprite[5] = sWalkSW
+	sprite[6] = sWalkS;
+	sprite[7] = sWalkSE
 
 	sprite_index = sprite[face];
 	
@@ -28,4 +32,4 @@ yspd = 0;
 	shootCooldown = 9; //9 default
 
 	bulletObj = oBullet;
-	weaponLength = sprite_get_bbox_right(sGun); //  - sprite_get_xoffset(sGun)
+	weaponLength = sprite_get_bbox_right(sBigGun); //  - sprite_get_xoffset(sGun)

@@ -28,8 +28,8 @@
   "nineSlice":null,
   "origin":7,
   "parent":{
-    "name":"Player",
-    "path":"folders/Player.yy",
+    "name":"OG Test Sprites",
+    "path":"folders/Player/OG Test Sprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
