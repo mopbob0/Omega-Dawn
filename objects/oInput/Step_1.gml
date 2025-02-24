@@ -1,3 +1,10 @@
+//toggle controller mode
+if keyboard_check_pressed(ord("K"))
+{
+	if global.controllerMode == 1 {global.controllerMode = 0;}
+	else {global.controllerMode = 1;}
+}
+
 //get inputs
 
 	//keyboard + mouse

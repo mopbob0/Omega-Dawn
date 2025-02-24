@@ -17,3 +17,7 @@ draw_self();
 	
 //draw hp
 draw_text(x,y, string(hp));
+
+
+
+draw_text(x,y+15, string(global.controllerMode));

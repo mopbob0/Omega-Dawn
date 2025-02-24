@@ -50,7 +50,38 @@ get_damaged(oDamagePlayer, true);
 		if global.controllerMode == 1
 		{
 			if global.xaxisRight != 0 || global.yaxisRight != 0 
-			aimDir = point_direction(0, 0, global.xaxisRight, global.yaxisRight);
+			{	
+				
+		//				aimDir = point_direction(0, 0, global.xaxisRight, global.yaxisRight);
+		
+				//// Calculate the target direction from the right stick
+				//var _destinationAngle = point_direction(0, 0, global.xaxisRight, global.yaxisRight);
+
+				//// Smoothly interpolate the aimDir (gun angle) towards the target angle
+				//aimDir = lerp(aimDir, _destinationAngle, 0.1); // Adjust 0.1 for smoothing speed
+
+				//// Normalize aimDir to keep it within the range [0, 360)
+				//aimDir = (aimDir + 360) mod 360;
+				
+				
+				
+				// Calculate the destination angle from the stick
+				var _newAimDir = point_direction(0, 0, global.xaxisRight, global.yaxisRight);
+
+				// Adjust _newAimDir so that the difference from the current aim is less than 180 degrees
+				if (_newAimDir - aimDir > 180) {
+				    _newAimDir -= 360;
+				} else if (_newAimDir - aimDir < -180) {
+				    _newAimDir += 360;
+				}
+
+				// Now smoothly interpolate the aim toward the adjusted destination
+				aimDir = lerp(aimDir, _newAimDir, 0.5);  // Adjust 0.35 for smoothing speed
+
+				// Normalize the result to 0–360
+				aimDir = (aimDir + 360) mod 360;
+		
+			}
 		}
 
 	//face player
