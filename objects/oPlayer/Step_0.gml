@@ -76,7 +76,7 @@ get_damaged(oDamagePlayer, true);
 				}
 
 				// Now smoothly interpolate the aim toward the adjusted destination
-				aimDir = lerp(aimDir, _newAimDir, 0.5);  // Adjust 0.35 for smoothing speed
+				aimDir = lerp(aimDir, _newAimDir, 0.1);  // Adjust 0.35 for smoothing speed
 
 				// Normalize the result to 0–360
 				aimDir = (aimDir + 360) mod 360;

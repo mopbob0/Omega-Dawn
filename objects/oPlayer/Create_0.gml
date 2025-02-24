@@ -9,7 +9,7 @@ yspd = 0;
 
 
 //sprite control
-	centerYOffset = -44;
+	centerYOffset = -60;
 	centerY = y + centerYOffset;
 
 	weaponOffsetDist = 2;
@@ -26,7 +26,7 @@ yspd = 0;
 	sprite[7] = sWalkSE
 
 	sprite_index = sprite[face];
-	
+
 //weapon info
 	shootTimer = 0;
 	shootCooldown = 9; //9 default
