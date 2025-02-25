@@ -4,6 +4,8 @@ if keyboard_check_pressed(ord("K"))
 	if global.controllerMode == 1 {global.controllerMode = 0;}
 	else {global.controllerMode = 1;}
 }
+/*
+
 
 //get inputs
 
@@ -46,3 +48,15 @@ if keyboard_check_pressed(ord("K"))
 			global.shootKey = gamepad_button_check(_gamePad, gp_shoulderrb);
 		}
 	}
+	
+*/
+
+		global.rightKey = input_check("right")
+		global.leftKey = input_check("left")
+		global.upKey = input_check("up")
+		global.downKey = input_check("down")
+
+		global.xaxisLeft = global.rightKey - global.leftKey;
+		global.yaxisLeft = global.downKey - global.upKey;
+		
+		global.shootKey = input_check("shoot")
