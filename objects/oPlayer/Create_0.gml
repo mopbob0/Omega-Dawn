@@ -14,6 +14,7 @@ yspd = 0;
 
 	weaponOffsetDist = 2;
 	aimDir = 0;
+	aimSmoothing = 0.5; // 0 = doesnt move, 1 = instant,     0.35 is what someone else uses
 
 	face = 0;
 	sprite[0] = sWalkE;

@@ -25,10 +25,22 @@ function __input_config_verbs()
         
         gamepad:
         {
+			//up:		[input_binding_gamepad_axis(gp_axislv, true), input_binding_gamepad_button(gp_padu)],
+			//down:		[input_binding_gamepad_axis(gp_axislv, false), input_binding_gamepad_button(gp_padd)],
+			//left:		[input_binding_gamepad_axis(gp_axislh, true), input_binding_gamepad_button(gp_padl)],
+			//right:	[input_binding_gamepad_axis(gp_axislh, false), input_binding_gamepad_button(gp_padr)],
+			
+			up:			input_binding_gamepad_button(gp_padu),
+			down:		input_binding_gamepad_button(gp_padd),
+			left:		input_binding_gamepad_button(gp_padl),
+			right:		input_binding_gamepad_button(gp_padr),
+			
+			shoot:		input_binding_gamepad_button(gp_shoulderrb),
         },
         
         touch:
         {
+			// you play on mobile? well that sucks, just get better
         }
     };
 }
