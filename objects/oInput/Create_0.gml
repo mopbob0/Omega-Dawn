@@ -15,3 +15,6 @@ global.shootKey = 0;
 
 //conteoller option
 global.controllerMode = 0;
+
+lastMouseX = mouse_x;
+lastMouseY = mouse_y

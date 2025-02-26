@@ -1,11 +1,18 @@
-//toggle controller mode
-if mouse_x != lastMouseX || mouse_y != lastMouseY
+//toggle controller mode / cursor mode for aiming
+if abs(mouse_x - lastMouseX) > 5  ||abs(mouse_y - lastMouseY) > 5
 {
-	if global.controllerMode == 1 {global.controllerMode = 0;}
-	else {global.controllerMode = 1;}
+	global.controllerMode = 0;
+	window_set_cursor(cr_default);
 }
+if global.xaxisRight !=0 || global.yaxisRight !=0
+{
+	global.controllerMode = 1;
+	window_set_cursor(cr_none);
+}
+
 lastMouseX = mouse_x;
 lastMouseY = mouse_y
+
 
 //get inputs
 
