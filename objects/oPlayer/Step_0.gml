@@ -5,6 +5,10 @@ upKey = global.upKey;
 downKey = global.downKey;
 shootKey = global.shootKey;
 
+if input_check("sprint")
+{
+	moveSpd = 4;
+}else moveSpd = 2;
 
 //player movement
 #region

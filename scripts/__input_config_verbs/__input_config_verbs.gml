@@ -20,6 +20,8 @@ function __input_config_verbs()
 			left:		input_binding_key(ord("A")),
 			right:		input_binding_key(ord("D")),	
 			
+			sprint:		input_binding_key(vk_shift),
+			
 			shoot:		input_binding_mouse_button(mb_left),
         },
         
@@ -34,6 +36,8 @@ function __input_config_verbs()
 			down:		input_binding_gamepad_button(gp_padd),
 			left:		input_binding_gamepad_button(gp_padl),
 			right:		input_binding_gamepad_button(gp_padr),
+			
+			sprint:		input_binding_gamepad_button(gp_stickl),
 			
 			shoot:		input_binding_gamepad_button(gp_shoulderrb),
         },
