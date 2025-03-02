@@ -8,8 +8,8 @@
   "name":"oCamera",
   "overriddenProperties":[],
   "parent":{
-    "name":"Ωmega Dawn",
-    "path":"Ωmega Dawn.yyp",
+    "name":"Game Control",
+    "path":"folders/Game Control.yy",
   },
   "parentObjectId":null,
   "persistent":true,

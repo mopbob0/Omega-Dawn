@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"custom_functions",
   "parent":{
-    "name":"Ωmega Dawn",
-    "path":"Ωmega Dawn.yyp",
+    "name":"Game Control",
+    "path":"folders/Game Control.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

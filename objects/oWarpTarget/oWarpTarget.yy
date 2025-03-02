@@ -6,8 +6,8 @@
   "name":"oWarpTarget",
   "overriddenProperties":[],
   "parent":{
-    "name":"Ωmega Dawn",
-    "path":"Ωmega Dawn.yyp",
+    "name":"Room Transition",
+    "path":"folders/Room Transition.yy",
   },
   "parentObjectId":null,
   "persistent":false,

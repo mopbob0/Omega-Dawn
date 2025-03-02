@@ -5,13 +5,14 @@ upKey = global.upKey;
 downKey = global.downKey;
 shootKey = global.shootKey;
 
-if input_check("sprint")
-{
-	moveSpd = 4;
-}else moveSpd = 2;
 
-//player movement
+// -- PLAYER MOVEMENT -- // 
 #region
+
+	//sprinting
+	if input_check("sprint"){moveSpd = 4;}
+	else moveSpd = 2;
+
 	//get direction
 	var _horizKey = global.xaxisLeft;
 	var _vertKey = global.yaxisLeft;
@@ -35,10 +36,24 @@ if input_check("sprint")
 	y += yspd;
 #endregion
 
-//get damaged
-get_damaged(oDamagePlayer, true);
+// -- DAMAGE and GAME OVER -- //
+#region
 
-//sprite control	
+	//get damaged
+	get_damaged(oDamagePlayer, true);
+
+	//death / game over
+	if hp <= 0
+	{
+		instance_create_depth(0,0,0,oGameOverScreen);
+		instance_destroy();
+		exit;
+	}
+
+#endregion
+
+
+// -- SPRITE CONTROL and VISUALS -- //
 #region
 	//player aiming
 	centerY = y + centerYOffset;
@@ -101,7 +116,14 @@ get_damaged(oDamagePlayer, true);
 	//set player sprite
 	mask_index = sprite[6];
 	sprite_index = sprite[face];
+	
+	depth = -bbox_bottom;
+
 #endregion
+
+
+// -- WEAPONS -- //
+#region
 
 //shoot weapon
 if shootTimer > 0 {(shootTimer--);}
@@ -122,4 +144,5 @@ if shootKey && shootTimer <=0
 	}
 }
 
-depth = -bbox_bottom;
+#endregion
+

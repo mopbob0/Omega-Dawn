@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Ωmega Dawn",
-    "path":"Ωmega Dawn.yyp",
+    "name":"Enemy Weapons",
+    "path":"folders/Weapons/Enemy Weapons.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

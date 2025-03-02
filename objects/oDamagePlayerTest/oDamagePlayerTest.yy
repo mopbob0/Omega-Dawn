@@ -8,8 +8,8 @@
   "name":"oDamagePlayerTest",
   "overriddenProperties":[],
   "parent":{
-    "name":"Ωmega Dawn",
-    "path":"Ωmega Dawn.yyp",
+    "name":"Damage Testing",
+    "path":"folders/Damage/Damage Testing.yy",
   },
   "parentObjectId":{
     "name":"oDamagePlayer",

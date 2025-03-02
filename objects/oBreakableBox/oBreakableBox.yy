@@ -10,8 +10,8 @@
   "name":"oBreakableBox",
   "overriddenProperties":[],
   "parent":{
-    "name":"Ωmega Dawn",
-    "path":"Ωmega Dawn.yyp",
+    "name":"Game Objects",
+    "path":"folders/Game Objects.yy",
   },
   "parentObjectId":{
     "name":"oSolidWall",

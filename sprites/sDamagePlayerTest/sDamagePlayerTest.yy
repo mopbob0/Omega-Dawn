@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Ωmega Dawn",
-    "path":"Ωmega Dawn.yyp",
+    "name":"Damage Testing",
+    "path":"folders/Damage/Damage Testing.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

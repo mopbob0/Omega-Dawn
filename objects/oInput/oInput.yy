@@ -9,8 +9,8 @@
   "name":"oInput",
   "overriddenProperties":[],
   "parent":{
-    "name":"Game Control",
-    "path":"folders/Game Control.yy",
+    "name":"Input",
+    "path":"folders/Input.yy",
   },
   "parentObjectId":null,
   "persistent":true,

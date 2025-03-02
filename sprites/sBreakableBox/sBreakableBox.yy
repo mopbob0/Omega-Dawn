@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Ωmega Dawn",
-    "path":"Ωmega Dawn.yyp",
+    "name":"Game Objects",
+    "path":"folders/Game Objects.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

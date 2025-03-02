@@ -42,8 +42,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Ωmega Dawn",
-    "path":"Ωmega Dawn.yyp",
+    "name":"Room Transition",
+    "path":"folders/Room Transition.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
