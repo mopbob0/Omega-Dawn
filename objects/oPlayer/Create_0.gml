@@ -1,7 +1,5 @@
 //damage setup
-	maxHp = 5;
-	hp = maxHp;
-	get_damaged_create(hp, true);
+	get_damaged_create(20, true);
 
 //variables for movement
 moveDir = 0;

@@ -10,8 +10,8 @@
   "name":"oCombatDroid",
   "overriddenProperties":[],
   "parent":{
-    "name":"Enemies",
-    "path":"folders/Enemies.yy",
+    "name":"Combat Droid",
+    "path":"folders/Enemies/Combat Droid.yy",
   },
   "parentObjectId":{
     "name":"oEnemyParent",

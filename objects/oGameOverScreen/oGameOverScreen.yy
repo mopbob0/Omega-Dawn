@@ -10,8 +10,8 @@
   "name":"oGameOverScreen",
   "overriddenProperties":[],
   "parent":{
-    "name":"Game Control",
-    "path":"folders/Game Control.yy",
+    "name":"UI",
+    "path":"folders/UI.yy",
   },
   "parentObjectId":null,
   "persistent":false,

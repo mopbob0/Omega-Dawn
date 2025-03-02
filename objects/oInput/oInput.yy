@@ -10,7 +10,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Input",
-    "path":"folders/Input.yy",
+    "path":"folders/Game Control/Input.yy",
   },
   "parentObjectId":null,
   "persistent":true,

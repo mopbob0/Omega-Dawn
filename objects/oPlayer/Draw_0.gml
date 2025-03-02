@@ -12,12 +12,3 @@ draw_self();
 	{
 		draw_my_weapon();
 	}
-	
-	
-	
-//draw hp
-draw_text(x,y, string(hp));
-
-
-
-draw_text(x,y+15, string(global.controllerMode));

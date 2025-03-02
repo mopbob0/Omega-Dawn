@@ -18,10 +18,12 @@
 
 
 
+
 //damage calculation
 	//damage create event
 	function get_damaged_create(_hp = 10, _iframes = false)
 	{
+		maxHp = _hp;
 		hp = _hp;
 		
 		//get the iframes
@@ -65,6 +67,9 @@
 							image_alpha =1;
 						}
 					}
+				
+					//clamp hp
+					hp = clamp(hp, 0, maxHp);
 				
 					exit;
 				}
@@ -136,4 +141,7 @@
 					}
 				}
 			}
+			
+			//clamp hp
+			hp = clamp(hp, 0, maxHp);
 	}

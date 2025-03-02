@@ -28,8 +28,8 @@
   "nineSlice":null,
   "origin":7,
   "parent":{
-    "name":"Enemies",
-    "path":"folders/Enemies.yy",
+    "name":"Combat Droid Sprites",
+    "path":"folders/Enemies/Combat Droid/Combat Droid Sprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
