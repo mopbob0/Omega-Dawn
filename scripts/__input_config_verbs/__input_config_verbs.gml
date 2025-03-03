@@ -23,6 +23,8 @@ function __input_config_verbs()
 			sprint:		input_binding_key(vk_shift),
 			
 			shoot:		input_binding_mouse_button(mb_left),
+			
+			start:		input_binding_key(vk_escape),
         },
         
         gamepad:
@@ -40,6 +42,8 @@ function __input_config_verbs()
 			sprint:		input_binding_gamepad_button(gp_stickl),
 			
 			shoot:		input_binding_gamepad_button(gp_shoulderrb),
+			
+			start:		input_binding_gamepad_button(gp_start),
         },
         
         touch:

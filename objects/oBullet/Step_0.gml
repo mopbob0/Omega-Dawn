@@ -1,3 +1,6 @@
+//pause self
+if screen_pause() {exit;}
+
 //move
 	xspd = lengthdir_x(spd, dir);
 	yspd = lengthdir_y(spd, dir);

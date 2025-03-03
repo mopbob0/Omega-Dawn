@@ -6,6 +6,21 @@ downKey = global.downKey;
 shootKey = global.shootKey;
 
 
+if input_check_pressed("start")
+{
+	if !instance_exists(oPauseMenu)
+	{
+		instance_create_depth(0,0,0,oPauseMenu);
+	} else {
+		instance_destroy(oPauseMenu);
+	}
+}
+
+
+//pause self
+if screen_pause() {exit;}
+
+
 // -- PLAYER MOVEMENT -- // 
 #region
 

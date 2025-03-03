@@ -16,7 +16,22 @@
 		draw_sprite_ext(sBigGun,0, x + _xOffset, centerY + _yOffset, 1, _weaponYscl, aimDir, c_white, 1);
 	}
 
-
+//vfx
+	function screen_pause()
+	{
+		//pause self
+		if instance_exists(oScreenPause)
+		{
+			image_speed = 0;
+			
+			return true;
+			
+		} else {
+			image_speed = 1;
+			
+			return false;
+		}
+	}
 
 
 //damage calculation

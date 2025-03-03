@@ -1,3 +1,6 @@
+//pause self
+if screen_pause() {exit;}
+
 //state machine
 switch(state)
 {
