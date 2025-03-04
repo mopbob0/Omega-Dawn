@@ -16,6 +16,9 @@
 		draw_sprite_ext(sBigGun,0, x + _xOffset, centerY + _yOffset, 1, _weaponYscl, aimDir, c_white, 1);
 	}
 
+
+
+
 //vfx
 	function screen_pause()
 	{
@@ -32,6 +35,23 @@
 			return false;
 		}
 	}
+	function create_screen_pause(_time = 3)
+	{
+		with( instance_create_depth(0,0,0, oScreenPauseTimed) )
+		{
+			timer = _time;
+		}
+	}
+	function screen_shake(_amount = 4)
+	{
+		with(oCamera)
+		{
+			xShakeAmount = _amount;
+			yShakeAmount = _amount;
+		}
+	}
+
+
 
 
 //damage calculation
@@ -86,7 +106,7 @@
 					//clamp hp
 					hp = clamp(hp, 0, maxHp);
 				
-					exit;
+					return false;
 				}
 			
 				//make sure iframe blinking stops
@@ -96,18 +116,22 @@
 				}
 			
 			//receive damage
-			if place_meeting(x,y, _damageObj)
+			var _hitConfirm = false;
+			if place_meeting(x,y, _damageObj)|| ( _damageObj != oDamageParent && place_meeting(x,y, oDamageAll)) /// || place_meeting(x,y, oDamageAll) //
 			{
 				//getting list of damage insts
 					//create list and copy instances to it
 						var _instList = ds_list_create();
 						instance_place_list(x,y, _damageObj, _instList, false);
+						if _damageObj != oDamageParent
+						{
+							instance_place_list(x,y, oDamageAll, _instList, false);
+						}
 	
 					//get size of list
 						var _listSize = ds_list_size(_instList);
 		
 					//loop through list
-						var _hitConfirm = false;
 						for(var i = 0; i < _listSize; i++)
 						{
 							//get a damage inst from list
@@ -157,6 +181,7 @@
 				}
 			}
 			
-			//clamp hp
 			hp = clamp(hp, 0, maxHp);
+			
+			return _hitConfirm;
 	}

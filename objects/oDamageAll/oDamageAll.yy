@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"oDamageEnemy",
+  "%Name":"oDamageAll",
   "eventList":[],
   "managed":true,
-  "name":"oDamageEnemy",
+  "name":"oDamageAll",
   "overriddenProperties":[],
   "parent":{
     "name":"Damage",
@@ -30,7 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"sEnemy",
+    "path":"sprites/sEnemy/sEnemy.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

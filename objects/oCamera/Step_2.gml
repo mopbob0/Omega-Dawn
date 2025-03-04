@@ -9,6 +9,39 @@ if instance_exists(oPlayer)
 	y = oPlayer.centerY - _camH/2;
 }
 
+//camera shaking
+if keyboard_check_pressed(vk_enter) 
+{
+	screen_shake(4);
+}
+
+	//x shake
+	if xShakeAmount > 0
+	{
+		xShakeDir += xShakeDirSpd;
+		xShakeAmount -= xShakeAmountSpd;
+	} else {
+		xShakeAmount = 0;
+		xShakeDir = 0;
+	}
+	xShake = dsin(xShakeDir) * xShakeAmount;
+	
+	//y shake
+	if yShakeAmount > 0
+	{
+		yShakeDir += yShakeDirSpd;
+		yShakeAmount -= yShakeAmountSpd;
+	} else {
+		yShakeAmount = 0;
+		yShakeDir = 0;
+	}
+	yShake = dsin(yShakeDir) * yShakeAmount;
+
+//add camera shake
+x += xShake;
+y += yShake;
+
+
 //clamp camera to room borders
 x = clamp(x,0,room_width - _camW);
 y = clamp(y,0,room_height - _camH);

@@ -55,7 +55,12 @@ if screen_pause() {exit;}
 #region
 
 	//get damaged
-	get_damaged(oDamagePlayer, true);
+	if get_damaged(oDamagePlayer, true)
+	{
+		//damage vfx
+		create_screen_pause(25);
+		screen_shake(6);
+	}
 
 	//death / game over
 	if hp <= 0
@@ -147,6 +152,9 @@ if shootKey && shootTimer <=0
 	//reset timer
 	shootTimer = shootCooldown;
 	
+	//screen shake
+	screen_shake(1);
+	
 	//create bullet
 	var _xOffset = lengthdir_x(weaponLength + weaponOffsetDist, aimDir);
 	var _yOffset = lengthdir_y(weaponLength + weaponOffsetDist, aimDir);
@@ -157,6 +165,7 @@ if shootKey && shootTimer <=0
 	{
 		dir = other.aimDir;
 	}
+
 }
 
 #endregion

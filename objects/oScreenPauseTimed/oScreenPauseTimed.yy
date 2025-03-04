@@ -1,17 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"oDamageEnemy",
-  "eventList":[],
+  "%Name":"oScreenPauseTimed",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"oDamageEnemy",
+  "name":"oScreenPauseTimed",
   "overriddenProperties":[],
   "parent":{
-    "name":"Damage",
-    "path":"folders/Damage.yy",
+    "name":"Game Control",
+    "path":"folders/Game Control.yy",
   },
   "parentObjectId":{
-    "name":"oDamageParent",
-    "path":"objects/oDamageParent/oDamageParent.yy",
+    "name":"oScreenPause",
+    "path":"objects/oScreenPause/oScreenPause.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
