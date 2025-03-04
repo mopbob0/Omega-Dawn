@@ -1,6 +1,8 @@
 //if screen_pause() {exit;}
 screen_pause();
 
+gamepad_set_vibration(0,1,1);
+
 if createdDamageObj == false
 {
 	damageInst = instance_create_depth(x,y,-20000, oDamageAll);
