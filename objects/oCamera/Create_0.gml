@@ -1,3 +1,5 @@
+global.screenShakeAmount = 1;
+
 xShake = 0;
 	xShakeDir = 0;
 	xShakeDirSpd = 45;

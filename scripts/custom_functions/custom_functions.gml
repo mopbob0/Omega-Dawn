@@ -44,6 +44,8 @@
 	}
 	function screen_shake(_amount = 4)
 	{
+		_amount *= global.screenShakeAmount;
+		
 		with(oCamera)
 		{
 			xShakeAmount = _amount;
@@ -87,6 +89,9 @@
 	//damage step event
 	function get_damaged(_damageObj, _iframes = false)
 	{
+		
+		
+		
 			//iframe visuals
 				//special exit for iframe timer
 				if _iframes == true && iframeTimer > 0 
@@ -115,13 +120,20 @@
 					image_alpha = 1;
 				}
 			
+			
+			
+
+			
 			//receive damage
 			var _hitConfirm = false;
-			if place_meeting(x,y, _damageObj)|| ( _damageObj != oDamageParent && place_meeting(x,y, oDamageAll)) /// || place_meeting(x,y, oDamageAll) //
+			if place_meeting(x,y, _damageObj)
+			|| ( _damageObj != oDamageParent && place_meeting(x,y, oDamageAll)) /// || place_meeting(x,y, oDamageAll) //
 			{
+				
 				//getting list of damage insts
+				
 					//create list and copy instances to it
-						var _instList = ds_list_create();
+						var _instList = ds_list_create();	
 						instance_place_list(x,y, _damageObj, _instList, false);
 						if _damageObj != oDamageParent
 						{
@@ -149,6 +161,7 @@
 								//take damnage from specific instance
 								hp -= _inst.damage;
 								_hitConfirm = true;
+								
 								//tell damnage inst it has impacted
 								_inst.hitConfirm = true;
 							}
@@ -163,6 +176,12 @@
 					//free memory
 						ds_list_destroy(_instList);	
 			}
+	
+	
+	
+	
+	
+	
 	
 			//clear damage list of objects that don't exist anymore or arent touching anymore 
 			if _iframes == false

@@ -1,4 +1,4 @@
 //vars for creating damage objects
-damage = 8;
+damage = 4;
 createdDamageObj = false;
 damageInst = noone;
