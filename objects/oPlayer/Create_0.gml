@@ -7,6 +7,10 @@ moveSpd = 2;
 xspd = 0;
 yspd = 0;
 
+vibration = false;
+vibrationPattern = false;
+vibrationPatternTime = 20;
+vibrationPatternTimer = vibrationPatternTime;
 
 //sprite control
 	centerYOffset = -60;

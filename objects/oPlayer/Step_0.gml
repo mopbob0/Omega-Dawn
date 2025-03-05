@@ -6,6 +6,23 @@ downKey = global.downKey;
 shootKey = global.shootKey;
 
 
+
+
+
+//vibrator
+
+if input_check_pressed("vibrate")
+{
+	vibration = !vibration;
+}
+if input_check_pressed("vibratePattern")
+{
+	vibrationPattern = !vibrationPattern;
+}
+
+if vibration == true
+{gamepad_set_vibration(0,2,2);}
+
 if input_check_pressed("start")
 {
 	if !instance_exists(oPauseMenu)
@@ -15,6 +32,24 @@ if input_check_pressed("start")
 		instance_destroy(oPauseMenu);
 	}
 }
+
+if vibrationPattern == true
+{
+	vibrationPatternTimer -=1;
+	if vibrationPatternTimer <= 0
+	{
+		vibration = !vibration;
+		vibrationPatternTimer = vibrationPatternTime;
+	}
+}
+
+
+
+
+
+
+
+
 
 
 //pause self

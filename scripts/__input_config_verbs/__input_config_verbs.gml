@@ -25,6 +25,10 @@ function __input_config_verbs()
 			shoot:		input_binding_mouse_button(mb_left),
 			
 			start:		input_binding_key(vk_escape),
+			
+			vibrate:	input_binding_key(ord("G")),
+			
+			vibratePattern: input_binding_key(vk_delete),
         },
         
         gamepad:
@@ -44,6 +48,10 @@ function __input_config_verbs()
 			shoot:		input_binding_gamepad_button(gp_shoulderrb),
 			
 			start:		input_binding_gamepad_button(gp_start),
+			
+			vibrate:	input_binding_gamepad_button(gp_shoulderlb),
+			
+			vibratePattern:	input_binding_gamepad_button(gp_shoulderl),
         },
         
         touch:
