@@ -112,6 +112,7 @@
     {"id":{"name":"rmTest","path":"rooms/rmTest/rmTest.yy",},},
     {"id":{"name":"rmTest2","path":"rooms/rmTest2/rmTest2.yy",},},
     {"id":{"name":"rmTest3","path":"rooms/rmTest3/rmTest3.yy",},},
+    {"id":{"name":"rmTest4","path":"rooms/rmTest4/rmTest4.yy",},},
     {"id":{"name":"__input_axis_is_directional","path":"scripts/__input_axis_is_directional/__input_axis_is_directional.yy",},},
     {"id":{"name":"__input_binding_get_label","path":"scripts/__input_binding_get_label/__input_binding_get_label.yy",},},
     {"id":{"name":"__input_class_binding","path":"scripts/__input_class_binding/__input_class_binding.yy",},},
@@ -487,6 +488,7 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"rmSetup","path":"rooms/rmSetup/rmSetup.yy",},},
+    {"roomId":{"name":"rmTest4","path":"rooms/rmTest4/rmTest4.yy",},},
     {"roomId":{"name":"rmTest2","path":"rooms/rmTest2/rmTest2.yy",},},
     {"roomId":{"name":"rmTest","path":"rooms/rmTest/rmTest.yy",},},
     {"roomId":{"name":"rmTest3","path":"rooms/rmTest3/rmTest3.yy",},},

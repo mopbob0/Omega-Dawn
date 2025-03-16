@@ -38,3 +38,10 @@ vibrationPatternTimer = vibrationPatternTime;
 
 	bulletObj = oBullet;
 	weaponLength = sprite_get_bbox_right(sBigGun); //  - sprite_get_xoffset(sGun)
+	
+	
+	
+	
+	
+	
+	lockedEnemy = noone;

@@ -4,8 +4,7 @@ leftKey = global.leftKey;
 upKey = global.upKey;
 downKey = global.downKey;
 shootKey = global.shootKey;
-
-
+lockKey = input_check("shoot2");
 
 
 
@@ -46,12 +45,6 @@ if vibrationPattern == true
 
 
 
-
-
-
-
-
-
 //pause self
 if screen_pause() {exit;}
 
@@ -59,8 +52,9 @@ if screen_pause() {exit;}
 // -- PLAYER MOVEMENT -- // 
 #region
 
-	//sprinting
-	if input_check("sprint"){moveSpd = 4;}
+	//move speed
+	if lockedEnemy {moveSpd = 0.5}
+	else if input_check("sprint"){moveSpd = 4;}
 	else moveSpd = 2;
 
 	//get direction
@@ -90,12 +84,12 @@ if screen_pause() {exit;}
 #region
 
 	//get damaged
-	if get_damaged(oDamagePlayer, true)
-	{
-		//damage vfx
-		create_screen_pause(25);
-		screen_shake(6);
-	}
+//	if get_damaged(oDamagePlayer, true)
+//	{
+//		//damage vfx
+//		create_screen_pause(25);
+//		screen_shake(6);
+//	}
 
 	//death / game over
 	if hp <= 0
@@ -108,13 +102,12 @@ if screen_pause() {exit;}
 #endregion
 
 
-// -- SPRITE CONTROL and VISUALS -- //
+// -- AIMING, SPRITE CONTROL and VISUALS -- //
 #region
-	//player aiming
-	centerY = y + centerYOffset;
-	
 	//aim
-		//keyboar + mouse
+		centerY = y + centerYOffset;
+	
+		//keyboard + mouse
 		if global.controllerMode == 0
 		{
 			aimDir = point_direction(x, centerY, mouse_x, mouse_y);
@@ -124,21 +117,7 @@ if screen_pause() {exit;}
 		if global.controllerMode == 1
 		{
 			if global.xaxisRight != 0 || global.yaxisRight != 0 
-			{	
-				
-		//				aimDir = point_direction(0, 0, global.xaxisRight, global.yaxisRight);
-		
-				//// Calculate the target direction from the right stick
-				//var _destinationAngle = point_direction(0, 0, global.xaxisRight, global.yaxisRight);
-
-				//// Smoothly interpolate the aimDir (gun angle) towards the target angle
-				//aimDir = lerp(aimDir, _destinationAngle, 0.1); // Adjust 0.1 for smoothing speed
-
-				//// Normalize aimDir to keep it within the range [0, 360)
-				//aimDir = (aimDir + 360) mod 360;
-				
-				
-				
+			{				
 				// Calculate the destination angle from the stick
 				var _newAimDir = point_direction(0, 0, global.xaxisRight, global.yaxisRight);
 
@@ -153,10 +132,55 @@ if screen_pause() {exit;}
 				aimDir = lerp(aimDir, _newAimDir, aimSmoothing); 
 
 				// Normalize the result to 0–360
-				aimDir = (aimDir + 360) mod 360;
-		
-			}
+				aimDir = (aimDir + 360) mod 360;	
+			}	
 		}
+
+
+
+	//target lock
+	if lockKey 
+	{
+	    var bestEnemy = noone;
+	    var lockRange = 300;
+	    var angleRange = 30;
+	    var bestDist = 999999;
+
+	    //find best enemy
+	    with oEnemyParent  
+	    {  
+	        //check distance
+	        var dist = point_distance(other.x, other.centerY, x, y);  
+	        if dist < lockRange
+	        {
+	            //check angle
+	            var enemyDir = point_direction(other.x, other.centerY, x, y);  
+	            var angleDiff = abs(angle_difference(other.aimDir, enemyDir));
+	            if angleDiff < angleRange
+	            {
+	                if bestEnemy == noone || dist < bestDist || (dist == bestDist && angleDiff < abs(angle_difference(other.aimDir, point_direction(x, y, bestEnemy.x, bestEnemy.y))))
+	                {
+	                    bestEnemy = id;
+	                    bestDist = dist;
+	                }
+	            }
+	        }
+	    }		
+	    lockedEnemy = bestEnemy;  
+	}
+	else  
+	{
+	    lockedEnemy = noone;
+	}
+
+	if lockedEnemy
+	{
+	    aimDir = point_direction(x, centerY, lockedEnemy.x, lockedEnemy.y);
+	}
+
+	//want to make target lock smooth not snappy similiar to controller smoothing line 90
+
+
 
 	//face player
 	face = round(aimDir/45);
