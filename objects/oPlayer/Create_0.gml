@@ -18,7 +18,9 @@ vibrationPatternTimer = vibrationPatternTime;
 
 	weaponOffsetDist = 2;
 	aimDir = 0;
-	aimSmoothing = 0.4; // 0 = doesnt move, 1 = instant,     0.35 is what someone else uses
+	newAimDir = 0;
+	mouseDir = 0;
+	aimSmoothing = 0.4; // 0 = doesnt move, 1 = instant,  0.4 default,   0.35 is what someone else uses
 
 	face = 0;
 	sprite[0] = sWalkE;

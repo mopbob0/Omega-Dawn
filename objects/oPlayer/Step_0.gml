@@ -7,8 +7,8 @@ shootKey = global.shootKey;
 lockKey = input_check("shoot2");
 
 
-
-//vibrator
+// -- VIBRATOR -- //
+#region
 
 if input_check_pressed("vibrate")
 {
@@ -19,8 +19,8 @@ if input_check_pressed("vibratePattern")
 	vibrationPattern = !vibrationPattern;
 }
 
-if vibration == true
-{gamepad_set_vibration(0,2,2);}
+//if vibration == true
+//{gamepad_set_vibration(0,2,2);}
 
 if input_check_pressed("start")
 {
@@ -42,12 +42,10 @@ if vibrationPattern == true
 	}
 }
 
-
-
+#endregion
 
 //pause self
 if screen_pause() {exit;}
-
 
 // -- PLAYER MOVEMENT -- // 
 #region
@@ -108,34 +106,16 @@ if screen_pause() {exit;}
 		centerY = y + centerYOffset;
 	
 		//keyboard + mouse
-		if global.controllerMode == 0
+		if global.controllerMode == 0 
 		{
-			aimDir = point_direction(x, centerY, mouse_x, mouse_y);
+			newAimDir = point_direction(x, centerY, mouse_x, mouse_y); 
 		}
 		
 		//controller
-		if global.controllerMode == 1
+		if global.controllerMode == 1 && (global.xaxisRight != 0 || global.yaxisRight != 0)
 		{
-			if global.xaxisRight != 0 || global.yaxisRight != 0 
-			{				
-				// Calculate the destination angle from the stick
-				var _newAimDir = point_direction(0, 0, global.xaxisRight, global.yaxisRight);
-
-				// Adjust _newAimDir so that the difference from the current aim is less than 180 degrees
-				if (_newAimDir - aimDir > 180) {
-				    _newAimDir -= 360;
-				} else if (_newAimDir - aimDir < -180) {
-				    _newAimDir += 360;
-				}
-
-				// Now smoothly interpolate the aim toward the adjusted destination
-				aimDir = lerp(aimDir, _newAimDir, aimSmoothing); 
-
-				// Normalize the result to 0–360
-				aimDir = (aimDir + 360) mod 360;	
-			}	
+			newAimDir = point_direction(0, 0, global.xaxisRight, global.yaxisRight);
 		}
-
 
 
 	//target lock
@@ -155,31 +135,41 @@ if screen_pause() {exit;}
 	        {
 	            //check angle
 	            var enemyDir = point_direction(other.x, other.centerY, x, y);  
-	            var angleDiff = abs(angle_difference(other.aimDir, enemyDir));
+	            var angleDiff = abs(angle_difference(other.newAimDir, enemyDir));
 	            if angleDiff < angleRange
 	            {
-	                if bestEnemy == noone || dist < bestDist || (dist == bestDist && angleDiff < abs(angle_difference(other.aimDir, point_direction(x, y, bestEnemy.x, bestEnemy.y))))
+	                if bestEnemy == noone || dist < bestDist || (dist == bestDist && angleDiff < abs(angle_difference(other.newAimDir, point_direction(x, y, bestEnemy.x, bestEnemy.y))))
 	                {
 	                    bestEnemy = id;
 	                    bestDist = dist;
 	                }
 	            }
 	        }
-	    }		
+	    }	
 	    lockedEnemy = bestEnemy;  
 	}
-	else  
-	{
-	    lockedEnemy = noone;
+	else 
+	{ 
+		lockedEnemy = noone; 
 	}
 
-	if lockedEnemy
-	{
-	    aimDir = point_direction(x, centerY, lockedEnemy.x, lockedEnemy.y);
+	if lockedEnemy 
+	{ 
+		newAimDir = point_direction(x, centerY, lockedEnemy.x, lockedEnemy.y);
 	}
 
-	//want to make target lock smooth not snappy similiar to controller smoothing line 90
 
+	//fix wacky transition over 0 degrees somehow I forgot how this works tbh lmao
+	if (newAimDir - aimDir > 180) {
+		newAimDir -= 360;
+	} else if (newAimDir - aimDir < -180) {
+		newAimDir += 360;
+	}
+
+
+	//lerp aim based on new direction
+	aimDir = lerp(aimDir, newAimDir, aimSmoothing); 
+	aimDir = (aimDir + 360) mod 360;	
 
 
 	//face player
