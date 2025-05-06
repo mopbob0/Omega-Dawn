@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sWalkS",
-    "path":"sprites/sWalkS/sWalkS.yy",
+    "name":"k_07",
+    "path":"sprites/k_07/k_07.yy",
   },
   "spriteMaskId":null,
   "visible":true,

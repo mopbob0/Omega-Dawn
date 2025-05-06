@@ -1,19 +1,30 @@
 //drawing the player's weapon
-	function draw_my_weapon()
+	function draw_my_weapon(_sprite)
 	{
 		//draw weapon
 		//offset weapon
 		var _xOffset = lengthdir_x(weaponOffsetDist, aimDir);
 		var _yOffset = lengthdir_y(weaponOffsetDist, aimDir);
 	
-		//flip weapon upright
+		_xOffset += weaponXoffset[face];
+	
+//		//flip weapon upright
 		var _weaponYscl = 1;
-		if aimDir > 90 && aimDir < 270
+//		if aimDir > 90 && aimDir < 270
+//		{
+//			_weaponYscl = -1;
+//		}
+
+		//correct aim
+		var _newAimDir = aimDir;
+		if aimDir >= 292.5 && aimDir <= 337.5
+		{_newAimDir = aimDir-45}
+		if aimDir >= 202.5 && aimDir <= 247.5
 		{
-			_weaponYscl = -1;
+			_newAimDir = aimDir-45;
 		}
 
-		draw_sprite_ext(sBigGun,0, x + _xOffset, centerY + _yOffset, 1, _weaponYscl, aimDir, c_white, 1);
+		draw_sprite_ext(_sprite,0, x + _xOffset, centerY + _yOffset, 1, _weaponYscl, _newAimDir, c_white, 1);
 	}
 
 

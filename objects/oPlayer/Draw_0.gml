@@ -1,14 +1,15 @@
 //draw weapon behind player
-	if aimDir >= 0 && aimDir < 180
+	if aimDir >= 67.5 && aimDir < 247.5
 	{
-		draw_my_weapon();
+		draw_my_weapon(arm[face]);
 	}
 
 //draw player
 draw_self();
 
 //draw weapon in front of player
-	if aimDir >= 180 && aimDir < 360
+	if aimDir >= 247.5 && aimDir < 360 || aimDir >=0 && aimDir < 67.5
 	{
-		draw_my_weapon();
+		draw_my_weapon(arm[face]);
 	}
+	

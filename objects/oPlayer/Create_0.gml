@@ -13,7 +13,7 @@ vibrationPatternTime = 20;
 vibrationPatternTimer = vibrationPatternTime;
 
 //sprite control
-	centerYOffset = -60;
+	centerYOffset = -37;
 	centerY = y + centerYOffset;
 
 	weaponOffsetDist = 2;
@@ -23,14 +23,33 @@ vibrationPatternTimer = vibrationPatternTime;
 	aimSmoothing = 0.4; // 0 = doesnt move, 1 = instant,  0.4 default,   0.35 is what someone else uses
 
 	face = 0;
-	sprite[0] = sWalkE;
-	sprite[1] = sWalkNE
-	sprite[2] = sWalkN;
-	sprite[3] = sWalkNW
-	sprite[4] = sWalkW;
-	sprite[5] = sWalkSW
-	sprite[6] = sWalkS;
-	sprite[7] = sWalkSE
+	sprite[0] = sPlayerE;
+	sprite[1] = sPlayerSW; // ne
+	sprite[2] = sPlayerS; // n
+	sprite[3] = sPlayerSE; // nw
+	sprite[4] = sPlayerW; // w
+	sprite[5] = sPlayerSW;
+	sprite[6] = sPlayerS;
+	sprite[7] = sPlayerSE;
+	
+	arm[0] = sPlayerArmE;
+	arm[1] = sPlayerArmS;
+	arm[2] = sPlayerArmS;
+	arm[3] = sPlayerArmS;
+	arm[4] = sPlayerArmW;
+	arm[5] = sPlayerArmSW;
+	arm[6] = sPlayerArmS;
+	arm[7] = sPlayerArmSE;
+	
+	weaponXoffset[0] = -2;	// E
+	weaponXoffset[1] = 0;	// NE
+	weaponXoffset[2] = 0;	// N
+	weaponXoffset[3] = 0;	// NW
+	weaponXoffset[4] = 0;	// W
+	weaponXoffset[5] = -4;	// SW
+	weaponXoffset[6] = -8;	// S
+	weaponXoffset[7] = -8;	// SE
+
 
 	sprite_index = sprite[face];
 
