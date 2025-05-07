@@ -3,8 +3,8 @@
 	{
 		//draw weapon
 		//offset weapon
-		var _xOffset = lengthdir_x(weaponOffsetDist, aimDir);
-		var _yOffset = lengthdir_y(weaponOffsetDist, aimDir);
+		var _xOffset = lengthdir_x(weaponOffsetDist, gunAimDir);
+		var _yOffset = lengthdir_y(weaponOffsetDist, gunAimDir);
 	
 		_xOffset += weaponXoffset[face];
 	
@@ -16,13 +16,23 @@
 //		}
 
 		//correct aim
-		var _newAimDir = aimDir;
-		if aimDir >= 292.5 && aimDir <= 337.5
-		{_newAimDir = aimDir-45}
-		if aimDir >= 202.5 && aimDir <= 247.5
-		{
-			_newAimDir = aimDir-45;
-		}
+		var _newAimDir = gunAimDir;
+		if aimDir > 22.5
+		{_newAimDir = aimDir - 45}
+		if aimDir > 67.5
+		{_newAimDir -= 45;}
+		if aimDir > 112.5
+		{_newAimDir -= 45;}
+		if aimDir > 157.5
+		{_newAimDir -= 45;}
+		if aimDir > 202.5
+		{_newAimDir -= 45;}
+		if aimDir > 247.5
+		{_newAimDir -= 45;}
+		if aimDir > 292.5
+		{_newAimDir -= 45;}
+		if aimDir > 337.5
+		{_newAimDir -= 45;}
 
 		draw_sprite_ext(_sprite,0, x + _xOffset, centerY + _yOffset, 1, _weaponYscl, _newAimDir, c_white, 1);
 	}

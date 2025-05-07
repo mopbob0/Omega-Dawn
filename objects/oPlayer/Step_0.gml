@@ -104,11 +104,13 @@ if screen_pause() {exit;}
 #region
 	//aim
 		centerY = y + centerYOffset;
+		centerX = x + weaponXoffset[face];
 	
 		//keyboard + mouse
 		if global.controllerMode == 0 
 		{
 			newAimDir = point_direction(x, centerY, mouse_x, mouse_y); 
+			gunAimDir = point_direction(centerX, centerY, mouse_x, mouse_y); 
 		}
 		
 		//controller

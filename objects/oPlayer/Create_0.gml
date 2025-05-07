@@ -13,10 +13,11 @@ vibrationPatternTime = 20;
 vibrationPatternTimer = vibrationPatternTime;
 
 //sprite control
-	centerYOffset = -37;
+	centerYOffset = -34;
 	centerY = y + centerYOffset;
+	centerX = x;
 
-	weaponOffsetDist = 2;
+	weaponOffsetDist = 0;
 	aimDir = 0;
 	newAimDir = 0;
 	mouseDir = 0;
@@ -24,31 +25,31 @@ vibrationPatternTimer = vibrationPatternTime;
 
 	face = 0;
 	sprite[0] = sPlayerE;
-	sprite[1] = sPlayerSW; // ne
-	sprite[2] = sPlayerS; // n
-	sprite[3] = sPlayerSE; // nw
-	sprite[4] = sPlayerW; // w
+	sprite[1] = sPlayerNE;
+	sprite[2] = sPlayerN;
+	sprite[3] = sPlayerNW;
+	sprite[4] = sPlayerW;
 	sprite[5] = sPlayerSW;
 	sprite[6] = sPlayerS;
 	sprite[7] = sPlayerSE;
 	
-	arm[0] = sPlayerArmE;
-	arm[1] = sPlayerArmS;
-	arm[2] = sPlayerArmS;
-	arm[3] = sPlayerArmS;
-	arm[4] = sPlayerArmW;
-	arm[5] = sPlayerArmSW;
-	arm[6] = sPlayerArmS;
-	arm[7] = sPlayerArmSE;
+	arm[0] = sPlayerEArm;
+	arm[1] = sPlayerNEArm;
+	arm[2] = sPlayerNArm;
+	arm[3] = sPlayerNWArm;
+	arm[4] = sPlayerWArm;
+	arm[5] = sPlayerSWArm;
+	arm[6] = sPlayerSArm;
+	arm[7] = sPlayerSEArm;
 	
-	weaponXoffset[0] = -2;	// E
-	weaponXoffset[1] = 0;	// NE
-	weaponXoffset[2] = 0;	// N
-	weaponXoffset[3] = 0;	// NW
+	weaponXoffset[0] = 0;	// E
+	weaponXoffset[1] = 4;	// NE
+	weaponXoffset[2] = 8;	// N
+	weaponXoffset[3] = 4;	// NW
 	weaponXoffset[4] = 0;	// W
 	weaponXoffset[5] = -4;	// SW
 	weaponXoffset[6] = -8;	// S
-	weaponXoffset[7] = -8;	// SE
+	weaponXoffset[7] = -6;	// SE
 
 
 	sprite_index = sprite[face];

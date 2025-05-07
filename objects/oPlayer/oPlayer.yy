@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"k_07",
-    "path":"sprites/k_07/k_07.yy",
+    "name":"k_07old",
+    "path":"sprites/k_07old/k_07old.yy",
   },
   "spriteMaskId":null,
   "visible":true,
