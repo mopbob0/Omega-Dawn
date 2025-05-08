@@ -207,14 +207,16 @@ if shootKey && shootTimer <=0
 	screen_shake(1);
 	
 	//create bullet
-	var _xOffset = lengthdir_x(weaponLength + weaponOffsetDist, aimDir);
-	var _yOffset = lengthdir_y(weaponLength + weaponOffsetDist, aimDir);
-	var _bulletInst = instance_create_depth(x + _xOffset, centerY + _yOffset, depth-100,bulletObj);
+	var _xOffset = lengthdir_x(weaponLength + weaponOffsetDist, gunAimDir);
+	var _yOffset = lengthdir_y(weaponLength + weaponOffsetDist, gunAimDir);
+	var _bulletInst = instance_create_depth(centerX + _xOffset, centerY + _yOffset, depth-100,bulletObj);
+	instance_create_depth(centerX + _xOffset, centerY + _yOffset, depth-100,oFlash);
 	
 	//change bullets direction
 	with(_bulletInst)
 	{
-		dir = other.aimDir;
+		dir = other.gunAimDir;
+		image_angle = dir;
 	}
 
 }

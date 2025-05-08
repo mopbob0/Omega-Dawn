@@ -20,6 +20,7 @@ vibrationPatternTimer = vibrationPatternTime;
 	weaponOffsetDist = 0;
 	aimDir = 0;
 	newAimDir = 0;
+	gunAimDir = 0;
 	mouseDir = 0;
 	aimSmoothing = 0.4; // 0 = doesnt move, 1 = instant,  0.4 default,   0.35 is what someone else uses
 
@@ -59,7 +60,7 @@ vibrationPatternTimer = vibrationPatternTime;
 	shootCooldown = 9; //9 default
 
 	bulletObj = oBullet;
-	weaponLength = sprite_get_bbox_right(sBigGun); //  - sprite_get_xoffset(sGun)
+	weaponLength = 20; //  - sprite_get_xoffset(sGun)
 	
 	
 	

@@ -18,7 +18,7 @@
 		//correct aim
 		var _newAimDir = gunAimDir;
 		if aimDir > 22.5
-		{_newAimDir = aimDir - 45}
+		{_newAimDir = gunAimDir - 45}
 		if aimDir > 67.5
 		{_newAimDir -= 45;}
 		if aimDir > 112.5
