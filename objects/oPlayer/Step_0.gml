@@ -51,9 +51,9 @@ if screen_pause() {exit;}
 #region
 
 	//move speed
-	if lockedEnemy {moveSpd = 0.5}
-	else if input_check("sprint"){moveSpd = 4;}
-	else moveSpd = 2;
+	if lockedEnemy {moveSpd = lockSpd}
+	else if input_check("sprint"){moveSpd = sprintSpd;}
+	else moveSpd = walkSpd;
 
 	//get direction
 	var _horizKey = global.xaxisLeft;
@@ -222,4 +222,3 @@ if shootKey && shootTimer <=0
 }
 
 #endregion
-
