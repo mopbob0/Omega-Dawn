@@ -4,8 +4,8 @@
 //variables for movement
 moveDir = 0;
 moveSpd = 0;
-walkSpd = 1;
-sprintSpd = 2;
+walkSpd = 2;
+sprintSpd = 3;
 lockSpd = 0.5;
 xspd = 0;
 yspd = 0;

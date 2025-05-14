@@ -1,6 +1,6 @@
 {
   "$GMSprite":"",
-  "%Name":"sCombatLeft",
+  "%Name":"sCombatLeftOLD",
   "bboxMode":0,
   "bbox_bottom":15,
   "bbox_left":4,
@@ -24,19 +24,19 @@
   "layers":[
     {"$GMImageLayer":"","%Name":"55122c91-f3a9-479d-b5dc-ed26ccf967bb","blendMode":0,"displayName":"default","isLocked":false,"name":"55122c91-f3a9-479d-b5dc-ed26ccf967bb","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"sCombatLeft",
+  "name":"sCombatLeftOLD",
   "nineSlice":null,
   "origin":7,
   "parent":{
-    "name":"Combat Droid Sprites",
-    "path":"folders/Enemies/Combat Droid/Combat Droid Sprites.yy",
+    "name":"OLD Combat Droid Sprites",
+    "path":"folders/Enemies/Combat Droid/OLD Combat Droid Sprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"",
-    "%Name":"sCombatLeft",
+    "%Name":"sCombatLeftOLD",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -60,7 +60,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"sCombatLeft",
+    "name":"sCombatLeftOLD",
     "playback":1,
     "playbackSpeed":30.0,
     "playbackSpeedType":0,
@@ -72,16 +72,16 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"9f41bd19-b241-47f2-89f0-4bc0cd21f5f2","path":"sprites/sCombatLeft/sCombatLeft.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"9f41bd19-b241-47f2-89f0-4bc0cd21f5f2","path":"sprites/sCombatLeftOLD/sCombatLeftOLD.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"15b74414-dcee-4a13-a60e-e2dfe6437621","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e0119bd8-2afc-41c7-a599-2b481d69ebf5","path":"sprites/sCombatLeft/sCombatLeft.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e0119bd8-2afc-41c7-a599-2b481d69ebf5","path":"sprites/sCombatLeftOLD/sCombatLeftOLD.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"32a7823b-31ef-42a3-aff0-7cd4859c2b0a","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"0d76dd7b-00cf-4c24-bd81-f17a8f3e5fbb","path":"sprites/sCombatLeft/sCombatLeft.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"0d76dd7b-00cf-4c24-bd81-f17a8f3e5fbb","path":"sprites/sCombatLeftOLD/sCombatLeftOLD.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"9b868eec-0ecf-4e8e-9c2d-2aadffb6a9bf","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"a4acaa5e-b686-45f1-bedf-5c68037d4f56","path":"sprites/sCombatLeft/sCombatLeft.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"a4acaa5e-b686-45f1-bedf-5c68037d4f56","path":"sprites/sCombatLeftOLD/sCombatLeftOLD.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"3e63d024-9abe-4745-b97a-2315c41f0787","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
