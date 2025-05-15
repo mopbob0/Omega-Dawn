@@ -1,6 +1,6 @@
 {
   "$GMSprite":"",
-  "%Name":"sCombatat",
+  "%Name":"sCombatWalk",
   "bboxMode":2,
   "bbox_bottom":40,
   "bbox_left":0,
@@ -21,19 +21,19 @@
   "layers":[
     {"$GMImageLayer":"","%Name":"6668d069-e254-41bf-8187-ba1b1c8b239d","blendMode":0,"displayName":"default","isLocked":false,"name":"6668d069-e254-41bf-8187-ba1b1c8b239d","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"sCombatat",
+  "name":"sCombatWalk",
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"Combat Droid",
-    "path":"folders/Enemies/Combat Droid.yy",
+    "name":"ENEMY",
+    "path":"folders/Entities/Enemies/ENEMY.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"",
-    "%Name":"sCombatat",
+    "%Name":"sCombatWalk",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -57,7 +57,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"sCombatat",
+    "name":"sCombatWalk",
     "playback":1,
     "playbackSpeed":30.0,
     "playbackSpeedType":0,
@@ -69,7 +69,7 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"bbb6c588-a923-42b2-977e-627d5871b579","path":"sprites/sCombatat/sCombatat.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"bbb6c588-a923-42b2-977e-627d5871b579","path":"sprites/sCombatWalk/sCombatWalk.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"dab8a916-2976-4ada-a47a-e0936811beba","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],

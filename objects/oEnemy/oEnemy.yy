@@ -1,21 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"oEnemyParentNew",
+  "%Name":"oEnemy",
   "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":12,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oEnemyParentNew",
+  "name":"oEnemy",
   "overriddenProperties":[],
   "parent":{
     "name":"ENEMY",
     "path":"folders/Entities/Enemies/ENEMY.yy",
   },
   "parentObjectId":{
-    "name":"oEntityParent",
-    "path":"objects/oEntityParent/oEntityParent.yy",
+    "name":"oEnemyParentNew",
+    "path":"objects/oEnemyParentNew/oEnemyParentNew.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

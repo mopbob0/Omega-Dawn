@@ -11,9 +11,12 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Player",
-    "path":"folders/Player.yy",
+    "path":"folders/Entities/Player.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"oEntityParent",
+    "path":"objects/oEntityParent/oEntityParent.yy",
+  },
   "persistent":true,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

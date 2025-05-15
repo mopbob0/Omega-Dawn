@@ -1,3 +1,5 @@
+event_inherited();
+
 //damage setup
 	get_damaged_create(20, true);
 

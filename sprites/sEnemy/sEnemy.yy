@@ -26,7 +26,7 @@
   "origin":7,
   "parent":{
     "name":"Parent",
-    "path":"folders/Enemies/Parent.yy",
+    "path":"folders/Entities/Enemies/Parent.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

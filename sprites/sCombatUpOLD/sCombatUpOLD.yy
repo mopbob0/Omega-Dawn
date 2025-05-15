@@ -29,7 +29,7 @@
   "origin":7,
   "parent":{
     "name":"OLD Combat Droid Sprites",
-    "path":"folders/Enemies/Combat Droid/OLD Combat Droid Sprites.yy",
+    "path":"folders/Entities/Enemies/Combat Droid/OLD Combat Droid Sprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

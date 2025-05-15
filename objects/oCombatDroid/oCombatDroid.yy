@@ -11,7 +11,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Combat Droid",
-    "path":"folders/Enemies/Combat Droid.yy",
+    "path":"folders/Entities/Enemies/Combat Droid.yy",
   },
   "parentObjectId":{
     "name":"oEnemyParent",
@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sCombatat",
-    "path":"sprites/sCombatat/sCombatat.yy",
+    "name":"sCombatWalk",
+    "path":"sprites/sCombatWalk/sCombatWalk.yy",
   },
   "spriteMaskId":null,
   "visible":true,

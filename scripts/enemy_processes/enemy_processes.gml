@@ -1,4 +1,3 @@
-///@desc	check if the player is close enough to start chasing
 function check_for_player(){
 	var _dis = distance_to_object(oPlayer);
 	
@@ -25,4 +24,25 @@ function check_for_player(){
 			path_end();	
 		}
 	}
+}
+
+function enemy_anim(){
+	switch(state)
+	{
+		case states.IDLE:
+			sprite_index = sIdle;
+		break;
+		case states.MOVE:
+			sprite_index = sMove;
+		break;
+		case states.ATTACK:
+			sprite_index = sAttack;
+		break;
+		case states.DEAD:
+			sprite_index = sDead;
+		break;
+	}
+	//updade previous position
+	xp = x;
+	yp = y;
 }

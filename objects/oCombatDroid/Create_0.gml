@@ -8,10 +8,10 @@ yspd = 0;
 
 //sprite control
 	face = 0;
-	sprite[0] = sCombatat; // right
-	sprite[1] = sCombatat; // up
-	sprite[2] = sCombatat; // left
-	sprite[3] = sCombatat; // down
+	sprite[0] = sCombatWalk; // right
+	sprite[1] = sCombatWalk; // up
+	sprite[2] = sCombatWalk; // left
+	sprite[3] = sCombatWalk; // down
 
 	sprite_index = sprite[face];
 	

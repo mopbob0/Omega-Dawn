@@ -12,7 +12,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Parent",
-    "path":"folders/Enemies/Parent.yy",
+    "path":"folders/Entities/Enemies/Parent.yy",
   },
   "parentObjectId":{
     "name":"oDamagePlayer",

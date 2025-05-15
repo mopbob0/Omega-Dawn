@@ -29,7 +29,7 @@
   "origin":7,
   "parent":{
     "name":"OG Test Sprites",
-    "path":"folders/Player/OG Test Sprites.yy",
+    "path":"folders/Entities/Player/OG Test Sprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

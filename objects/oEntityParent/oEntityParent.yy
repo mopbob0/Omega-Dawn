@@ -1,22 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"oEnemyParentNew",
+  "%Name":"oEntityParent",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":12,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oEnemyParentNew",
+  "name":"oEntityParent",
   "overriddenProperties":[],
   "parent":{
-    "name":"ENEMY",
-    "path":"folders/Entities/Enemies/ENEMY.yy",
+    "name":"Entities",
+    "path":"folders/Entities.yy",
   },
-  "parentObjectId":{
-    "name":"oEntityParent",
-    "path":"objects/oEntityParent/oEntityParent.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -34,10 +29,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"sCombatWalk",
-    "path":"sprites/sCombatWalk/sCombatWalk.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
